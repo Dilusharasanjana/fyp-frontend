@@ -30,7 +30,7 @@ class Register extends React.Component {
                     <form>
                       <div class="form-inline ">
                         <p class="col-lg-5 col-mb-4 col-form-label; h5">
-                          Bus Number&nbsp;:&nbsp;
+                          Full Name&nbsp;:&nbsp;
                         </p>
 
                         <div class="col-lg-6">
@@ -47,7 +47,7 @@ class Register extends React.Component {
                       <br></br>
                       <div class="form-inline">
                         <p class="col-lg-5 col-mb-4 col-form-label; h5">
-                          Add E-Mail&nbsp;:&nbsp;
+                          ID Number&nbsp;:&nbsp;
                         </p>
 
                         <div class="col-lg-6">
@@ -64,7 +64,7 @@ class Register extends React.Component {
                       <br></br>
                       <div class="form-inline">
                         <p class="col-lg-5 col-mb-4 col-form-label; h5">
-                          Password&nbsp;:&nbsp;
+                          SDR Model&nbsp;:&nbsp;
                         </p>
 
                         <div class="col-lg-6">
@@ -81,7 +81,25 @@ class Register extends React.Component {
                       <br></br>
                       <div class="form-inline">
                         <p class="col-lg-5 col-mb-4 col-form-label; h5">
-                          No of seats&nbsp;:&nbsp;
+                          Service Provider&nbsp;:&nbsp;
+                        </p>
+
+                        <div class="col-lg-6">
+                          <input
+                            class="form"
+                            type="text"
+                            name="password"
+                            placeholder="add your password"
+                            
+                            required="required"
+                          />
+                        </div>
+                      </div>
+                      <br></br>
+                      
+                      <div class="form-inline">
+                        <p class="col-lg-5 col-mb-4 col-form-label; h5">
+                          Location&nbsp;:&nbsp;
                         </p>
 
                         <div class="col-lg-6">

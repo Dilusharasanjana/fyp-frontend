@@ -8,6 +8,7 @@ import Blockexplore from "./Blockexplore";
 import Transaction from "./Transaction";
 import Register from "./Register";
 import AppNew from "./test/AppNew";
+import Key from "./Key";
 
 const App=()=>{
   return(
@@ -17,6 +18,7 @@ const App=()=>{
         <Route path="transaction" element={<Transaction />} />
         <Route path="register" element={<Register />} />
         <Route path="app" element={<AppNew/>}/>
+        <Route path="key" element={<Key/>}/>
       </Routes>
     </BrowserRouter>
   );
