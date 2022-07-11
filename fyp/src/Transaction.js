@@ -1,10 +1,19 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
 import { Redirect, withRouter } from "react-router-dom";
 
 import Moment from "moment";
 
 const Transaction = () => {
+
+  const[data,setData]=useState({})
+
+  useEffect(() => {axios
+    .get("")
+    .then((response) =>{setData(response.data);
+  });  
+  },[]);
+
   return (
     <div >
         <div class=" d-none d-md-block ">
@@ -18,32 +27,32 @@ const Transaction = () => {
                 <div class="card-body  bg-light  p-3">
                   <div class="col-lg-3">
                     <p>
-                      <b>Amount :</b>
+                      <b>Amount : &nbsp; {data.amount}</b>
                     </p>
                   </div>
                   
                   <div class="col-lg-3">
-                  <p><b>Detection Probability :</b></p>
+                  <p><b>Detection Probability : &nbsp; {data.detection_probability}</b></p>
                   </div>
                   <div class="col-lg-3">
                     <p>
-                      <b>Hash Stake : </b>
+                      <b>Hash Stake : &nbsp; {data.hash_stake}</b>
                     </p>
                   </div>
                   <div class="col-lg-3">
-                    <p><b>ID : </b></p>
+                    <p><b>ID : &nbsp; {data.id}</b></p>
                   </div>
                   <div class="col-lg-3">
-                    <p><b>Node IPFS Hash : </b></p>
+                    <p><b>Node IPFS Hash : &nbsp; {data.node_ipfs_hash} </b></p>
                   </div>
                   <div class="col-lg-3">
-                    <p><b>Reciever Public Key : </b></p>
+                    <p><b>Reciever Public Key : &nbsp; {data.recieverPublicKey}</b></p>
                   </div>
                   <div class="col-lg-3">
-                    <p><b>Sender Public Key : </b></p>
+                    <p><b>Sender Public Key : &nbsp; {data.senderPublicKey}</b></p>
                   </div>
                   <div class="col-lg-3">
-                    <p><b>Signature : </b></p>
+                    <p><b>Signature : &nbsp; {data.signature}</b></p>
                   </div>
 
                   

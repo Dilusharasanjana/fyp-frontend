@@ -38,12 +38,7 @@ const Key = () => {
                         </button>
                       </div>
                   
-                  
-                  
-                  
-</div>
-                  
-
+                </div>
                     
                   </div>
                 </div>
